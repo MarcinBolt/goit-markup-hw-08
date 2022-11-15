@@ -1,0 +1,35 @@
+.contacts-list {
+  display: flex;
+  flex-wrap: wrap;
+  list-style-type: none;
+  padding-left: 0px;
+  padding-block: 0px;
+  margin-block: 0px;
+  gap: 30px;
+
+  &__icon {
+    margin-right: 10px;
+  }
+  &__link {
+    display: flex;
+    align-items: center;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $secondary-accent-color;
+    fill: $secondary-accent-color;
+    transition-property: color, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $hovered-activated-accent-color;
+      color: $hovered-activated-accent-color;
+      transition-property: color, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

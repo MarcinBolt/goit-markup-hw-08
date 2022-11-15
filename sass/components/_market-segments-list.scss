@@ -1,0 +1,41 @@
+.market-segments-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 30px;
+  list-style-type: none;
+  padding-left: 0px;
+  margin-block: 0px;
+
+  &__icon-background {
+    max-width: 270px;
+    height: 120px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: $accents-background-color-gray;
+    border-radius: 4px;
+    margin-bottom: 30px;
+  }
+  &__icon {
+    width: 70px;
+    height: 70px;
+  }
+  &__title {
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: $primary-font-color;
+    margin-block: 0px;
+    padding-bottom: 10px;
+  }
+  &__description {
+    max-width: 270px;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $secondary-accent-color;
+    margin-block: 0px;
+  }
+}

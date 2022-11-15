@@ -1,0 +1,31 @@
+.companies-logos-list {
+  list-style-type: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding-left: 0px;
+  margin: 0px;
+
+  &__link {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0px;
+    width: 168px;
+    height: 90px;
+    border: 1px solid $customers-section-accent-color;
+    fill: $customers-section-accent-color;
+    transition-property: color, background, border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border-color: $hovered-activated-accent-color;
+      fill: $hovered-activated-accent-color;
+      transition-property: border, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

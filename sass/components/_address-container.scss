@@ -1,0 +1,45 @@
+.address-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+
+  &__address {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $light-font-color;
+    padding-top: 20px;
+    padding-bottom: 9px;
+    margin-block: 0px;
+  }
+
+  &__contacts-list {
+    display: flex;
+    flex-direction: column;
+    list-style-type: none;
+    gap: 9px;
+    margin: 0px;
+    padding-left: 0px;
+  }
+
+  &__link {
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: rgba(255, 255, 255, 0.6);
+    transition-property: color, background, border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $hovered-activated-accent-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

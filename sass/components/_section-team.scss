@@ -1,0 +1,22 @@
+.section-team {
+  background: $accents-background-color-gray;
+
+  &__header {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin-block: 0px;
+  }
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    list-style-type: none;
+    margin-block: 0px;
+    padding-left: 0px;
+  }
+}

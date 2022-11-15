@@ -1,0 +1,25 @@
+.closing-button {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  background-color: $main-background-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  fill: $brand-color-black;
+  padding: 6px;
+  margin: 0px;
+  border-radius: 50%;
+  cursor: pointer;
+  transition-property: fill, background;
+  transition-duration: 250ms;
+  transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+  &:hover {
+    background-color: $brand-color-black;
+    fill: $main-background-color;
+    transition-property: fill, background;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+}

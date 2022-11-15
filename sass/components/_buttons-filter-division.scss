@@ -1,0 +1,14 @@
+.buttons-filter-division {
+  padding-bottom: 34px;
+
+  &__list {
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 8px;
+    margin-block: 0px;
+    padding-left: 0px;
+    padding-bottom: 16px;
+  }
+}

@@ -1,0 +1,31 @@
+.button {
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  padding-left: 42px;
+  padding-block: 10px;
+  padding-right: 41px;
+  background: $brand-color-accent;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  border: 0px;
+  color: $light-font-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.875;
+  letter-spacing: 0.06em;
+
+  &__icon--end {
+    margin-left: 24px;
+  }
+
+  &--order-button-widening {
+    padding-inline: 76px;
+  }
+
+  &--newsletter-icon-fitting {
+    padding-right: 28px;
+  }
+}

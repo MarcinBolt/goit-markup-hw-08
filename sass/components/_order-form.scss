@@ -1,0 +1,150 @@
+.order-form {
+  &__division {
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+  }
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 1.15;
+    text-align: center;
+    letter-spacing: 0.03em;
+    color: $primary-font-color;
+    margin-block: 0px;
+    padding-top: 2px;
+    padding-bottom: 12px;
+  }
+  &__label-description {
+    display: flex;
+    flex-direction: column;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+    color: $secondary-accent-color;
+    padding: 0px;
+    margin: 0px;
+  }
+  &__label {
+    position: relative;
+    cursor: text;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    padding: 0px;
+    margin-top: 0px;
+    margin-inline: 0px;
+    margin-bottom: 6px;
+    transition-property: border;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      border: 1px solid $hovered-activated-accent-color;
+      transition-property: border, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:hover .order-form__icon,
+    &:focus-within .order-form__icon {
+      fill: $hovered-activated-accent-color;
+      transition-property: border, fill;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+  &__input {
+    width: 446px;
+    height: 38px;
+    border: 0px;
+    background-color: transparent;
+    border-radius: inherit;
+    padding-left: 42px;
+    padding-block: 12px;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+  }
+
+  &__label-terms {
+    display: flex;
+    justify-content: center;
+    margin-inline: 14px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    padding: 0px;
+  }
+
+  &__comment-textarea {
+    width: 446px;
+    height: 118px;
+    border: 1px solid rgba(33, 33, 33, 0.2);
+    border-radius: 4px;
+    border: 0px;
+    padding: 12px 16px;
+    resize: none;
+    font-size: 12px;
+    line-height: 1.17;
+    letter-spacing: 0.01em;
+
+    &::placeholder {
+      color: $comment-placeholder-color;
+      font-size: 12px;
+      line-height: 1.17;
+      letter-spacing: 0.01em;
+    }
+  }
+
+  &__link {
+    color: $brand-color-accent;
+  }
+  &__terms-span {
+    margin-left: 8px;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.714;
+    letter-spacing: 0.03em;
+    color: $secondary-accent-color;
+    position: relative;
+  }
+  &__icon {
+    position: absolute;
+    bottom: 11px;
+    left: 12px;
+    fill: $brand-color-black;
+    transition-property: fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    cursor: text;
+  }
+
+  &__checkbox-icon {
+    cursor: pointer;
+    position: absolute;
+    fill: $brand-color-white;
+    top: 4px;
+    transform: scale(1);
+    left: -21px;
+    border: 2px solid $brand-color-black;
+    border-radius: 2px;
+    transition-property: fill, scale;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+  }
+  &__input-checkbox {
+    visibility: hidden;
+
+    &:checked + .order-form__terms-span .order-form__checkbox-icon {
+      fill: $hovered-activated-accent-color;
+      border: 0px;
+      padding: 0px;
+      margin: 0px;
+      transition-property: fill, scale;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}

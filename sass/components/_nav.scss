@@ -1,0 +1,47 @@
+.nav {
+  display: flex;
+  flex-grow: 0.8;
+  flex-wrap: wrap;
+
+  &__list {
+    display: flex;
+    flex-wrap: wrap;
+    list-style-type: none;
+    gap: 46px;
+    padding-left: 0px;
+    padding-block: 0px;
+    margin-block: 0px;
+  }
+
+  &__link {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;
+    letter-spacing: 0.02em;
+    color: $primary-font-color;
+    transition-property: color, background, border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $hovered-activated-accent-color;
+      fill: $hovered-activated-accent-color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--current:visited {
+      color: $hovered-activated-accent-color;
+      position: relative;
+    }
+    &--current::after {
+      content: '';
+      position: relative;
+      display: block;
+      top: 29px;
+      border-bottom: 4px solid $hovered-activated-accent-color;
+      border-radius: 2px;
+    }
+  }
+}

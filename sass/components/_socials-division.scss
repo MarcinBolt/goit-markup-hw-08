@@ -1,0 +1,65 @@
+.socials-division {
+  &__list {
+    list-style-type: none;
+    display: flex;
+    gap: 10px;
+    margin: 0px;
+    padding: 0px;
+    border-radius: 50%;
+  }
+
+  &__list-element {
+    display: flex;
+    border-radius: 50%;
+  }
+
+  &__link {
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    fill: $socials-icon-main-color;
+    transition-property: color, background, border, fill;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      fill: $brand-color-white;
+      background-color: $hovered-activated-accent-color;
+      transition-property: fill, background;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+
+    &--footer-background-changing {
+      background: $footer-icons-background-color;
+    }
+  }
+
+  &__icon {
+    fill: inherit;
+    width: 20px;
+    height: 20px;
+
+    // &:hover,
+    // &:focus {
+    //   fill: $brand-color-white;
+    //   transition-property: fill, background;
+    //   transition-duration: 250ms;
+    //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    // }
+
+    &--change-footer-fill {
+      fill: $brand-color-white;
+    }
+  }
+
+  &--team-member-card-positioning {
+    padding: 0px;
+    margin: 0px 32px 30px 32px;
+    border: 0px;
+  }
+}
