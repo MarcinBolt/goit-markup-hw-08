@@ -13,24 +13,39 @@
       rel="stylesheet"
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@700&family=Roboto:wght@400;500;700;900&display=swap"
     />
-    <!-- <link rel="stylesheet" href="./css/styles.css" /> -->
     <link rel="stylesheet" href="./css/main.min.css" />
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>WebStudio</title>
   </head>
   <body class="body">
     <header class="header">
       <div class="main-menu-wrapper container">
-        <a class="text-decoration-none logo logo--enlarged-space-in-header" href="./index.html"
-          ><span class="logo__static-part">Web</span>Studio</a
+        <div class="logo-container logo-container--enlarged-space-in-header">
+          <a class="text-decoration-none logo-container__link" href="./index.html"
+            ><span class="logo-container__static-part">Web</span>Studio</a
+          >
+        </div>
+
+        <button
+          class="mobile-menu-container__toggle js-open-menu"
+          aria-expanded="false"
+          aria-controls="mobile-menu"
         >
+          <svg class="mobile-menu__icon" width="24" height="16">
+            <use href="./images/icons.svg#icon-mobile-menu"></use>
+          </svg>
+        </button>
+
         <nav class="nav">
           <ul class="nav__list">
-            <li><a class="text-decoration-none nav__link" href="./index.html">Agencja</a></li>
             <li>
-              <a class="text-decoration-none nav__link nav__link--current" href="./portfolio.html"
-                >Portfolio</a
+              <a class="text-decoration-none nav__link nav__link--current" href="./index.html"
+                >Agencja</a
               >
+            </li>
+            <li>
+              <a class="text-decoration-none nav__link" href="./portfolio.html">Portfolio</a>
             </li>
             <li><a class="text-decoration-none nav__link" href="#">Kontakt</a></li>
           </ul>
@@ -38,14 +53,14 @@
         <ul class="contacts-list">
           <li>
             <a class="text-decoration-none contacts-list__link" href="mailto:info@devstudio.com"
-              ><svg class="contacts-list__icon contacts-list__icon--start" width="16" height="12">
+              ><svg class="contacts-list__icon" width="16" height="12">
                 <use href="./images/icons.svg#icon-email"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
             <a class="text-decoration-none contacts-list__link" href="tel:+48111111111"
-              ><svg class="contacts-list__icon contacts-list__icon--start" width="10" height="16">
+              ><svg class="contacts-list__icon" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use></svg
               >+48 111 111 111</a
             >
@@ -278,9 +293,13 @@
       <div class="container">
         <div class="footer-wrapper">
           <div class="footer-division">
-            <a class="text-decoration-none logo logo--change-color-in-footer" href="./index.html"
-              ><span class="logo__static-part">Web</span>Studio</a
-            >
+            <div class="logo-container">
+              <a
+                class="text-decoration-none logo-container__link logo-container--change-color-in-footer"
+                href="./index.html"
+                ><span class="logo-container__static-part">Web</span>Studio</a
+              >
+            </div>
             <address class="address-container">
               <p class="address-container__address">m. Warszawa, Aleje Jerozolimskie 21</p>
               <ul class="address-container__contacts-list">
@@ -357,5 +376,82 @@
         </div>
       </div>
     </footer>
+
+    <div class="mobile-menu-container js-mobile-menu-container" id="mobile-menu">
+      <button class="mobile-menu-container__toggle js-close-menu">
+        <svg width="16.67" height="16.67">
+          <use href="./images/icons.svg#icon-close-x"></use>
+        </svg>
+      </button>
+
+      <ul class="mobile-menu-container__nav">
+        <li>
+          <a href="./index.html" class="text-decoration-none mobile-menu-container__nav-link"
+            >Agencja</a
+          >
+        </li>
+        <li>
+          <a
+            href="./portfolio.html"
+            class="text-decoration-none mobile-menu-container__nav-link mobile-menu-container__nav-link--current"
+            >Portfolio</a
+          >
+        </li>
+        <li>
+          <a href="#Kontakt" class="text-decoration-none mobile-menu-container__nav-link"
+            >Kontakt</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-container__contacts-list">
+        <li>
+          <a
+            class="text-decoration-none mobile-menu-container__contacts-list-phone"
+            href="tel:+48111111111"
+            >+48 111 111 111</a
+          >
+        </li>
+        <li>
+          <a
+            class="text-decoration-none mobile-menu-container__contacts-list-email"
+            href="mailto:info@devstudio.com"
+            >info@devstudio.com</a
+          >
+        </li>
+      </ul>
+
+      <ul class="mobile-menu-container__socials-list">
+        <li>
+          <a
+            href="#Instagram"
+            class="text-decoration-none mobile-menu-container__social-link mobile-menu-container__social-link--modify-left-site"
+            >Instagram</a
+          >
+        </li>
+        <li>
+          <a href="#Twitter" class="text-decoration-none mobile-menu-container__social-link"
+            >Twitter</a
+          >
+        </li>
+        <li>
+          <a href="#Facebook" class="text-decoration-none mobile-menu-container__social-link"
+            >Facebook</a
+          >
+        </li>
+        <li>
+          <a href="#Linkedin" class="text-decoration-none mobile-menu-container__social-link"
+            >LinkedIn</a
+          >
+        </li>
+      </ul>
+    </div>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
   </body>
 </html>

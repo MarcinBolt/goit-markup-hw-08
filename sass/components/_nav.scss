@@ -27,6 +27,7 @@
     &:focus {
       color: $hovered-activated-accent-color;
       fill: $hovered-activated-accent-color;
+      transition-property: color, background, border, fill;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
@@ -43,5 +44,11 @@
       border-bottom: 4px solid $hovered-activated-accent-color;
       border-radius: 2px;
     }
+  }
+}
+
+@media (max-width: 480px) {
+  .nav {
+    display: none;
   }
 }

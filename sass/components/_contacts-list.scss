@@ -33,3 +33,14 @@
     }
   }
 }
+
+@media (min-width: 481px) and (max-width: 768px) {
+  .contacts-list {
+    flex-direction: column;
+  }
+}
+@media (max-width: 480px) {
+  .contacts-list {
+    display: none;
+  }
+}

@@ -16,8 +16,7 @@
   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
   &:hover {
-    background-color: $brand-color-black;
-    fill: $main-background-color;
+    fill: $brand-color-accent;
     transition-property: fill, background;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);

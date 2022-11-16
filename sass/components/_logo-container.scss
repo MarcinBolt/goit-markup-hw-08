@@ -1,0 +1,38 @@
+.logo-container {
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  &__link {
+    font-family: $font-logo-raleway;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+    letter-spacing: 0.03em;
+    vertical-align: middle;
+    // margin-right: 93px;
+    color: $brand-color-black;
+    transition-property: color;
+    transition-duration: 250ms;
+    transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+
+    &:hover,
+    &:focus {
+      color: $hovered-activated-accent-color;
+      transition-property: color;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+
+  &__static-part {
+    color: $brand-color-accent;
+  }
+
+  &--enlarged-space-in-header {
+    flex-grow: 0.21;
+  }
+
+  &--change-color-in-footer {
+    color: $light-font-color;
+  }
+}
