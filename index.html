@@ -53,14 +53,14 @@
         <ul class="contacts-list">
           <li>
             <a class="text-decoration-none contacts-list__link" href="mailto:info@devstudio.com"
-              ><svg class="contacts-list__icon" width="16" height="12">
+              ><svg class="contacts-list__icon-email" width="16" height="12">
                 <use href="./images/icons.svg#icon-email"></use></svg
               >info@devstudio.com</a
             >
           </li>
           <li>
             <a class="text-decoration-none contacts-list__link" href="tel:+48111111111"
-              ><svg class="contacts-list__icon" width="10" height="16">
+              ><svg class="contacts-list__icon-phone" width="10" height="16">
                 <use href="./images/icons.svg#icon-phone"></use></svg
               >+48 111 111 111</a
             >
@@ -80,7 +80,7 @@
       <div class="content-division container section">
         <h2 class="hidden">Invisible header</h2>
         <ul class="market-segments-list">
-          <li>
+          <li class="market-segments-list__item">
             <div class="market-segments-list__icon-background">
               <svg class="market-segments-list__icon">
                 <use href="./images/icons.svg#icon-antenna"></use>
@@ -92,7 +92,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="market-segments-list__item">
             <div class="market-segments-list__icon-background">
               <svg class="market-segments-list__icon">
                 <use href="./images/icons.svg#icon-clock"></use>
@@ -104,7 +104,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="market-segments-list__item">
             <div class="market-segments-list__icon-background">
               <svg class="market-segments-list__icon">
                 <use href="./images/icons.svg#icon-diagram"></use>
@@ -116,7 +116,7 @@
               sodales dui. Interdum et malesuada
             </p>
           </li>
-          <li>
+          <li class="market-segments-list__item">
             <div class="market-segments-list__icon-background">
               <svg class="market-segments-list__icon">
                 <use href="./images/icons.svg#icon-astronaut"></use>
@@ -138,6 +138,7 @@
               <img
                 class="img-gallery-with-descriptions__img"
                 src="images/image-left.jpg"
+                srcset="images/image-left.jpg 2x"
                 width="370"
                 height="294"
                 alt="Backend"
@@ -150,6 +151,7 @@
               <img
                 class="img-gallery-with-descriptions__img"
                 src="images/image-center.jpg"
+                srcset="images/image-center.jpg 2x"
                 width="370"
                 height="294"
                 alt="Frontend"
@@ -162,6 +164,7 @@
               <img
                 class="img-gallery-with-descriptions__img"
                 src="images/image-right.jpg"
+                srcset="images/image-right.jpg 2x"
                 width="370"
                 height="294"
                 alt="Design"
@@ -179,6 +182,7 @@
               <img
                 class="team-member-card__photo"
                 src="images/photo-product-designer.jpg"
+                srcset="images/photo-product-designer.jpg 2x"
                 alt="Photo Procuct Designer"
               />
               <h3 class="team-member-card__name">John Dou</h3>
@@ -216,6 +220,7 @@
               <img
                 class="team-member-card__photo"
                 src="images/photo-frontend-developer.jpg"
+                srcset="images/photo-frontend-developer.jpg 2x"
                 alt="Photo Frontend Developer"
               />
               <h3 class="team-member-card__name">John Doe</h3>
@@ -253,6 +258,7 @@
               <img
                 class="team-member-card__photo"
                 src="images/photo-marketing.jpg"
+                srcset="images/photo-marketing.jpg 2x"
                 alt="Photo Marketing"
               />
               <h3 class="team-member-card__name">John Doe</h3>
@@ -290,6 +296,7 @@
               <img
                 class="team-member-card__photo"
                 src="images/photo-ui-designer.jpg"
+                srcset="images/photo-ui-designer.jpg 2x"
                 alt="Photo UI Designer"
               />
               <h3 class="team-member-card__name">John Doe</h3>

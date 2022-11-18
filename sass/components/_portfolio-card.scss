@@ -1,14 +1,14 @@
 .portfolio-card {
   &__box-img {
-    width: 370px;
+    width: 450px;
     height: 294px;
     display: block;
   }
 
   &__animated-box {
     display: block;
-    max-height: 294px;
-    max-width: 370px;
+    max-height: 100%;
+    max-width: 100%;
     border-radius: 0px;
     position: relative;
     overflow: hidden;
@@ -57,5 +57,22 @@
     letter-spacing: 0.03em;
     padding: 0px 24px 20px 24px;
     margin-block: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .portfolio-card {
+    &__box-img {
+      width: 354px;
+      height: 294px;
+    }
+  }
+}
+@media screen and (min-width: 769px) {
+  .portfolio-card {
+    &__box-img {
+      width: 370px;
+      height: 294px;
+    }
   }
 }

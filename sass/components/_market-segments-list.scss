@@ -2,13 +2,16 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  gap: 30px;
+  row-gap: 30px;
+  column-gap: 0px;
   list-style-type: none;
   padding-left: 0px;
   margin-block: 0px;
 
+  &__item {
+    max-width: 450px;
+  }
   &__icon-background {
-    max-width: 270px;
     height: 120px;
     display: flex;
     align-items: center;
@@ -31,11 +34,30 @@
     padding-bottom: 10px;
   }
   &__description {
-    max-width: 270px;
     font-size: 14px;
     line-height: 1.714;
     letter-spacing: 0.03em;
     color: $secondary-accent-color;
     margin-block: 0px;
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .market-segments-list {
+    gap: 30px;
+
+    &__item {
+      max-width: 354px;
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .market-segments-list {
+    gap: 30px;
+
+    &__item {
+      max-width: 270px;
+    }
   }
 }

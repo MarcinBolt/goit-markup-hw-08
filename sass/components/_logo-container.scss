@@ -2,14 +2,14 @@
   display: flex;
   margin: 0px;
   padding: 0px;
+
   &__link {
     font-family: $font-logo-raleway;
     font-weight: 700;
-    font-size: 26px;
-    line-height: 1.19;
+    font-size: 24px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     vertical-align: middle;
-    // margin-right: 93px;
     color: $brand-color-black;
     transition-property: color;
     transition-duration: 250ms;
@@ -34,5 +34,24 @@
 
   &--change-color-in-footer {
     color: $light-font-color;
+  }
+}
+
+@media screen and (min-width: 480px) {
+  .logo-container__link {
+    font-size: 24px;
+    line-height: 1.383;
+  }
+}
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .logo-container--enlarged-space-in-header {
+    flex-grow: 0.4;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .logo-container__link {
+    font-size: 26px;
+    line-height: 1.19;
   }
 }
