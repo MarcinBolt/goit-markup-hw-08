@@ -1,6 +1,7 @@
 .logo-container {
   display: flex;
-  margin: 0px;
+  justify-content: center;
+  margin: 0 auto;
   padding: 0px;
 
   &__link {
@@ -29,29 +30,28 @@
   }
 
   &--enlarged-space-in-header {
-    flex-grow: 0.21;
+    margin-left: 0px;
+    margin-right: 60px;
   }
 
-  &--change-color-in-footer {
+  &--change-in-footer {
     color: $light-font-color;
   }
 }
 
-@media screen and (min-width: 480px) {
-  .logo-container__link {
-    font-size: 24px;
-    line-height: 1.383;
-  }
-}
-@media screen and (min-width: 481px) and (max-width: 768px) {
-  .logo-container--enlarged-space-in-header {
-    flex-grow: 0.4;
-  }
-}
-
 @media screen and (min-width: 769px) {
-  .logo-container__link {
-    font-size: 26px;
-    line-height: 1.19;
+  .logo-container {
+    justify-content: flex-start;
+    margin: 0;
+
+    &--enlarged-space-in-header {
+      flex-grow: 0.21;
+      margin: 0;
+    }
+
+    &__link {
+      font-size: 26px;
+      line-height: 1.19;
+    }
   }
 }

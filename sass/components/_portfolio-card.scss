@@ -1,7 +1,7 @@
 .portfolio-card {
   &__box-img {
     width: 450px;
-    height: 294px;
+    max-height: 294px;
     display: block;
   }
 
@@ -64,7 +64,7 @@
   .portfolio-card {
     &__box-img {
       width: 354px;
-      height: 294px;
+      max-height: 294px;
     }
   }
 }
@@ -72,7 +72,7 @@
   .portfolio-card {
     &__box-img {
       width: 370px;
-      height: 294px;
+      max-height: 294px;
     }
   }
 }

@@ -1,8 +1,13 @@
 .footer-section-socials {
-  display: inline-block;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   padding: 0px;
 
   &__header {
+    display: flex;
+    justify-content: center;
     font-family: $font-roboto;
     font-style: normal;
     font-weight: 700;
@@ -11,8 +16,18 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin: 0px;
-    padding-top: 12px;
+    padding-top: 5px;
     padding-bottom: 20px;
     color: $light-font-color;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .footer-section-socials {
+    display: flex;
+    padding: 0px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 0px;
   }
 }

@@ -47,7 +47,9 @@
     flex-direction: row;
 
     &__list-element {
-      flex-basis: calc((100% - 2 * 30px) / 3);
+      max-width: 370px;
+      max-height: 440px;
+      //   flex-basis: calc((100% - 2 * 30px) / 3);
     }
   }
 }
