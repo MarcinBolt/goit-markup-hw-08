@@ -1,11 +1,18 @@
 .section-subjects {
   background-color: inherit;
+
+  &__header {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+    margin-block: 0px;
+  }
 }
-.section-subjects__header {
-  text-align: center;
-  font-size: 36px;
-  line-height: 1.167;
-  letter-spacing: 0.03em;
-  padding-bottom: 50px;
-  margin-block: 0px;
+
+@media screen and (max-width: 768px) {
+  .section-subjects {
+    display: none;
+  }
 }

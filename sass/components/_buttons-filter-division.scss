@@ -4,6 +4,7 @@
   list-style-type: none;
   flex-wrap: wrap;
   justify-content: flex-start;
+  max-width: 480px;
 
   &__list {
     list-style-type: none;
@@ -20,6 +21,7 @@
   .buttons-filter-division {
     padding-bottom: 30px;
     justify-content: center;
+    max-width: 768px;
 
     &__list {
       display: grid;
@@ -34,6 +36,7 @@
   .buttons-filter-division {
     padding-bottom: 34px;
     justify-content: center;
+    margin: 0 auto;
 
     &__list {
       display: grid;

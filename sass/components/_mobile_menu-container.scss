@@ -6,7 +6,7 @@
   height: 100vh;
   background-color: $main-background-color;
   z-index: 5;
-  transform: translateX(100%);
+  transform: translateX(150%);
   transition: transform 250ms ease-in-out;
   padding-block: 48px;
   padding-left: 40px;
@@ -67,7 +67,7 @@
     &--current:visited {
       color: $hovered-activated-accent-color;
     }
-    
+
     &:hover,
     &:focus {
       color: $hovered-activated-accent-color;

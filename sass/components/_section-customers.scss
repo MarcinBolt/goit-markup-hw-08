@@ -1,8 +1,19 @@
 .section-customers__header {
   text-align: center;
-  font-size: 36px;
-  line-height: 1.167;
+  font-size: 28px;
+  line-height: 1, 178;
   letter-spacing: 0.03em;
-  padding-bottom: 50px;
+  padding-top: 0px;
+  padding-bottom: 30px;
   margin-block: 0px;
+}
+
+@media screen and (min-width: 769px) {
+  .section-customers__header {
+    text-align: center;
+    font-size: 36px;
+    line-height: 1.167;
+    letter-spacing: 0.03em;
+    padding-bottom: 50px;
+  }
 }

@@ -2,7 +2,8 @@
   list-style-type: none;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 30px;
   padding-left: 0px;
   margin: 0px;
 
@@ -11,7 +12,7 @@
     align-items: center;
     justify-content: center;
     margin: 0px;
-    width: 168px;
+    width: 208px;
     height: 90px;
     border: 1px solid $customers-section-accent-color;
     fill: $customers-section-accent-color;
@@ -27,5 +28,17 @@
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
+  }
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .companies-logos-list__link {
+    width: 224px;
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .companies-logos-list__link {
+    width: 168px;
   }
 }

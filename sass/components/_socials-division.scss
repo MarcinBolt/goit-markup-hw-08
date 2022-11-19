@@ -2,8 +2,9 @@
   &__list {
     list-style-type: none;
     display: flex;
+    justify-content: center;
     gap: 10px;
-    margin: 0px;
+    margin: 0 auto;
     padding: 0px;
     border-radius: 50%;
   }
@@ -43,14 +44,6 @@
     fill: inherit;
     width: 20px;
     height: 20px;
-
-    // &:hover,
-    // &:focus {
-    //   fill: $brand-color-white;
-    //   transition-property: fill, background;
-    //   transition-duration: 250ms;
-    //   transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
-    // }
 
     &--change-footer-fill {
       fill: $brand-color-white;
