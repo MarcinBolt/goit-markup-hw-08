@@ -616,6 +616,12 @@
   margin-block: 0px;
 }
 
+@media screen and (max-width: 455px) {
+  .team-member-card__photo {
+    width: 92vw;
+    height: auto;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .team-member-card__photo {
     max-width: 354px;
@@ -1054,7 +1060,7 @@
   margin-left: 24px;
 }
 .newsletter-division__input {
-  width: 450px;
+  width: 93.75vw;
   height: 50px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
@@ -1082,6 +1088,11 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 481px) and (max-width: 768px) {
+  .newsletter-division__input {
+    width: 450px;
+  }
+}
 @media screen and (min-width: 769px) {
   .newsletter-division {
     max-width: 590px;
@@ -1180,7 +1191,21 @@
   margin: 0 auto;
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (max-width: 479px) {
+  .modal {
+    max-width: 92vw;
+    min-height: -webkit-fit-content;
+    min-height: -moz-fit-content;
+    min-height: fit-content;
+  }
+  .modal__container {
+    -webkit-box-sizing: border-box;
+            box-sizing: border-box;
+    padding: 10% 8.3% 8.3% 8.3%;
+    margin: 0 auto;
+  }
+}
+@media screen and (min-width: 480px) and (min-width: 769px) {
   .modal {
     width: 528px;
     height: 581px;
@@ -1285,7 +1310,6 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
-  margin-inline: 14px;
   margin-top: 10px;
   margin-bottom: 20px;
   margin-inline: 0px;
@@ -1337,7 +1361,7 @@
   color: #2196f3;
 }
 .order-form__terms-span {
-  margin-left: 8px;
+  padding-left: 8px;
   font-weight: 400;
   font-size: 12px;
   line-height: 1.17;
@@ -1365,7 +1389,7 @@
   top: -1px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  left: -25px;
+  left: -23px;
   border: 2px solid #000;
   border-radius: 2px;
   -webkit-transition-property: fill, scale;
@@ -1377,6 +1401,8 @@
 }
 .order-form__input-checkbox {
   visibility: hidden;
+  width: 20px;
+  height: 20px;
 }
 .order-form__input-checkbox:checked + .order-form__terms-span .order-form__checkbox-icon {
   fill: #2196f3;
@@ -1391,6 +1417,14 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (max-width: 479px) {
+  .order-form__terms-span {
+    padding-left: 15px;
+  }
+  .order-form__checkbox-icon {
+    left: -22px;
+  }
+}
 @media screen and (min-width: 769px) {
   .order-form__title {
     line-height: 1.15;
@@ -1462,6 +1496,23 @@
   padding-bottom: 16px;
 }
 
+@media screen and (max-width: 479px) {
+  .buttons-filter-division {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    max-width: 95vw;
+  }
+  .buttons-filter-division__list {
+    display: grid;
+    grid-area: 95vw;
+    grid-template-columns: 103px 103px;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    gap: 8px;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .buttons-filter-division {
     padding-bottom: 30px;
@@ -1675,6 +1726,12 @@
   margin-block: 0px;
 }
 
+@media screen and (max-width: 479px) {
+  .portfolio-card__box-img {
+    max-width: 92vw;
+    max-height: 294px;
+  }
+}
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .portfolio-card__box-img {
     width: 354px;
@@ -1827,6 +1884,12 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  row-gap: 10px;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;

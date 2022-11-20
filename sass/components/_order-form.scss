@@ -74,7 +74,6 @@
   &__label-terms {
     display: flex;
     justify-content: center;
-    margin-inline: 14px;
     margin-top: 10px;
     margin-bottom: 20px;
     margin-inline: 0px;
@@ -105,7 +104,7 @@
     color: $brand-color-accent;
   }
   &__terms-span {
-    margin-left: 8px;
+    padding-left: 8px;
     font-weight: 400;
     font-size: 12px;
     line-height: 1.17;
@@ -130,7 +129,7 @@
     fill: $brand-color-white;
     top: -1px;
     transform: scale(1);
-    left: -25px;
+    left: -23px;
     border: 2px solid $brand-color-black;
     border-radius: 2px;
     transition-property: fill, scale;
@@ -139,6 +138,8 @@
   }
   &__input-checkbox {
     visibility: hidden;
+    width: 20px;
+    height: 20px;
 
     &:checked + .order-form__terms-span .order-form__checkbox-icon {
       fill: $hovered-activated-accent-color;
@@ -148,6 +149,17 @@
       transition-property: fill, scale;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+@media screen and (max-width: 479px) {
+  .order-form {
+    &__terms-span {
+      padding-left: 15px;
+    }
+    &__checkbox-icon {
+      left: -22px;
     }
   }
 }

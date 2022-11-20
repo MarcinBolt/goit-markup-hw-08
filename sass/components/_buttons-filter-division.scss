@@ -17,6 +17,21 @@
   }
 }
 
+@media screen and (max-width: 479px) {
+  .buttons-filter-division {
+    justify-content: center;
+    max-width: 95vw;
+
+    &__list {
+      display: grid;
+      grid-area: 95vw;
+      grid-template-columns: 103px 103px;
+      justify-content: center;
+      gap: 8px;
+    }
+  }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .buttons-filter-division {
     padding-bottom: 30px;

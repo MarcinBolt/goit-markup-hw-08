@@ -25,6 +25,13 @@
   }
 }
 
+@media screen and (max-width: 455px) {
+  .team-member-card__photo {
+      width: 92vw;
+      height: auto;
+  }
+}
+
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .team-member-card__photo {
     max-width: 354px;
