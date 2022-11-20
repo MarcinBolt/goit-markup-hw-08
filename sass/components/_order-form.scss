@@ -7,7 +7,7 @@
   &__title {
     font-weight: 700;
     font-size: 20px;
-    line-height: 1.15;
+    line-height: 1.5;
     text-align: center;
     letter-spacing: 0.03em;
     color: $primary-font-color;
@@ -27,6 +27,7 @@
     margin: 0px;
   }
   &__label {
+    width: 100%;
     position: relative;
     cursor: text;
     display: flex;
@@ -37,32 +38,33 @@
     margin-top: 0px;
     margin-inline: 0px;
     margin-bottom: 6px;
-    transition-property: border;
+    transition-property: border, color;
     transition-duration: 250ms;
     transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover,
     &:focus {
       border: 1px solid $hovered-activated-accent-color;
-      transition-property: border, fill;
+      transition-property: border, fill, color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
     &:hover .order-form__icon,
     &:focus-within .order-form__icon {
       fill: $hovered-activated-accent-color;
-      transition-property: border, fill;
+      transition-property: fill, color;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
     }
   }
   &__input {
-    width: 446px;
+    width: auto;
     height: 38px;
     border: 0px;
     background-color: transparent;
     border-radius: inherit;
     padding-left: 42px;
+    padding-right: 42px;
     padding-block: 12px;
     font-size: 12px;
     line-height: 1.17;
@@ -75,11 +77,12 @@
     margin-inline: 14px;
     margin-top: 10px;
     margin-bottom: 20px;
+    margin-inline: 0px;
     padding: 0px;
   }
 
   &__comment-textarea {
-    width: fit-content;
+    width: auto;
     height: 118px;
     border: 1px solid rgba(33, 33, 33, 0.2);
     border-radius: 4px;
@@ -104,8 +107,8 @@
   &__terms-span {
     margin-left: 8px;
     font-weight: 400;
-    font-size: 14px;
-    line-height: 1.714;
+    font-size: 12px;
+    line-height: 1.17;
     letter-spacing: 0.03em;
     color: $secondary-accent-color;
     position: relative;
@@ -125,9 +128,9 @@
     cursor: pointer;
     position: absolute;
     fill: $brand-color-white;
-    top: 4px;
+    top: -1px;
     transform: scale(1);
-    left: -21px;
+    left: -25px;
     border: 2px solid $brand-color-black;
     border-radius: 2px;
     transition-property: fill, scale;
@@ -145,6 +148,22 @@
       transition-property: fill, scale;
       transition-duration: 250ms;
       transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+@media screen and (min-width: 769px) {
+  .order-form {
+    &__title {
+      line-height: 1.15;
+    }
+    &__terms-span {
+      font-size: 14px;
+      line-height: 1.714;
+    }
+    &__checkbox-icon {
+      top: 4px;
+      left: -21px;
     }
   }
 }

@@ -1199,7 +1199,7 @@
 .order-form__title {
   font-weight: 700;
   font-size: 20px;
-  line-height: 1.15;
+  line-height: 1.5;
   text-align: center;
   letter-spacing: 0.03em;
   color: #212121;
@@ -1224,6 +1224,7 @@
   margin: 0px;
 }
 .order-form__label {
+  width: 100%;
   position: relative;
   cursor: text;
   display: -webkit-box;
@@ -1239,8 +1240,8 @@
   margin-top: 0px;
   margin-inline: 0px;
   margin-bottom: 6px;
-  -webkit-transition-property: border;
-  transition-property: border;
+  -webkit-transition-property: border, color;
+  transition-property: border, color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1248,8 +1249,8 @@
 }
 .order-form__label:hover, .order-form__label:focus {
   border: 1px solid #2196f3;
-  -webkit-transition-property: border, fill;
-  transition-property: border, fill;
+  -webkit-transition-property: border, fill, color;
+  transition-property: border, fill, color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
@@ -1257,20 +1258,21 @@
 }
 .order-form__label:hover .order-form__icon, .order-form__label:focus-within .order-form__icon {
   fill: #2196f3;
-  -webkit-transition-property: border, fill;
-  transition-property: border, fill;
+  -webkit-transition-property: fill, color;
+  transition-property: fill, color;
   -webkit-transition-duration: 250ms;
           transition-duration: 250ms;
   -webkit-transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 .order-form__input {
-  width: 446px;
+  width: auto;
   height: 38px;
   border: 0px;
   background-color: transparent;
   border-radius: inherit;
   padding-left: 42px;
+  padding-right: 42px;
   padding-block: 12px;
   font-size: 12px;
   line-height: 1.17;
@@ -1286,12 +1288,11 @@
   margin-inline: 14px;
   margin-top: 10px;
   margin-bottom: 20px;
+  margin-inline: 0px;
   padding: 0px;
 }
 .order-form__comment-textarea {
-  width: -webkit-fit-content;
-  width: -moz-fit-content;
-  width: fit-content;
+  width: auto;
   height: 118px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1338,8 +1339,8 @@
 .order-form__terms-span {
   margin-left: 8px;
   font-weight: 400;
-  font-size: 14px;
-  line-height: 1.714;
+  font-size: 12px;
+  line-height: 1.17;
   letter-spacing: 0.03em;
   color: #757575;
   position: relative;
@@ -1361,10 +1362,10 @@
   cursor: pointer;
   position: absolute;
   fill: #fff;
-  top: 4px;
+  top: -1px;
   -webkit-transform: scale(1);
           transform: scale(1);
-  left: -21px;
+  left: -25px;
   border: 2px solid #000;
   border-radius: 2px;
   -webkit-transition-property: fill, scale;
@@ -1390,6 +1391,19 @@
           transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+@media screen and (min-width: 769px) {
+  .order-form__title {
+    line-height: 1.15;
+  }
+  .order-form__terms-span {
+    font-size: 14px;
+    line-height: 1.714;
+  }
+  .order-form__checkbox-icon {
+    top: 4px;
+    left: -21px;
+  }
+}
 .closing-button {
   position: absolute;
   top: 8px;
