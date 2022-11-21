@@ -141,7 +141,31 @@
   }
 }
 
-@media (min-width: 481px) {
+@media (max-width: 375px) {
+  .mobile-menu-container {
+    padding-block: 28px;
+    padding-left: 20px;
+
+    &__nav {
+      padding-bottom: 150px;
+    }
+
+    &__contacts-list-phone {
+      font-size: 26px;
+    }
+    &__contacts-list-email {
+      font-size: 18px;
+    }
+    &__socials-list {
+    row-gap: 25px;
+  }
+    &__social-link {
+    font-size: 20px;
+    }
+  }
+}
+
+@media (min-width: 768px) {
   .mobile-menu-container__toggle {
     display: none;
   }

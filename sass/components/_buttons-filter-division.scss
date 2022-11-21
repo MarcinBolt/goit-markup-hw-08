@@ -17,26 +17,24 @@
   }
 }
 
-@media screen and (max-width: 479px) {
+@media screen and (max-width: 420px) {
   .buttons-filter-division {
     justify-content: center;
     max-width: 95vw;
 
     &__list {
-      display: grid;
       grid-area: 95vw;
       grid-template-columns: 103px 103px;
       justify-content: center;
-      gap: 8px;
     }
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .buttons-filter-division {
     padding-bottom: 30px;
     justify-content: center;
-    max-width: 768px;
+    margin: 0 auto;
 
     &__list {
       display: grid;
@@ -47,7 +45,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .buttons-filter-division {
     padding-bottom: 34px;
     justify-content: center;

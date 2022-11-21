@@ -1,20 +1,20 @@
 .portfolio-cards-division {
-  margin-block: 0px;
   display: flex;
+  justify-content: center;
 
   &__list {
     list-style-type: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 30px;
     padding: 0px;
-    margin-block: 0px;
+    margin: 0px auto;
     flex-wrap: wrap;
   }
+
   &__list-element {
     max-width: 450px;
     max-height: 404px;
-    // flex-basis: calc((100% - 1 * 30px) / 2);
 
     &:hover,
     &:focus-within,
@@ -31,25 +31,30 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 768px) {
   .portfolio-cards-division {
-    flex-direction: row;
-
+    &__list {
+      display: grid;
+      grid-template-columns: 354px 354px;
+      gap: 30px;
+    }
     &__list-element {
       max-width: 354px;
       max-height: 440px;
-      // flex-basis: calc((100% - 30px) / 2);
     }
   }
 }
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .portfolio-cards-division {
-    flex-direction: row;
-
+    &__list {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      gap: 30px;
+    }
     &__list-element {
       max-width: 370px;
       max-height: 440px;
-      //   flex-basis: calc((100% - 2 * 30px) / 3);
     }
   }
 }

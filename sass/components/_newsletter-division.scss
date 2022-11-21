@@ -24,18 +24,15 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    // gap: 12px;
     padding: 0px;
     margin-block: 0px;
     margin-right: 0px;
-    // margin-left: 8px;
     align-items: flex-end;
   }
 
   &__label {
     display: flex;
     flex-direction: row;
-    // gap: 20px;
     font-family: $font-roboto;
     font-style: normal;
     font-weight: 700;
@@ -80,7 +77,7 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 480px) {
   .newsletter-division {
     &__input {
       width: 450px;
@@ -88,7 +85,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .newsletter-division {
     max-width: 590px;
     display: inline-flex;

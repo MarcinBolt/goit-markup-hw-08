@@ -31,7 +31,7 @@
 
   &--enlarged-space-in-header {
     margin-left: 0px;
-    margin-right: 60px;
+    margin-right: 0px;
   }
 
   &--change-in-footer {
@@ -39,7 +39,7 @@
   }
 }
 
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .logo-container {
     justify-content: flex-start;
     margin: 0;

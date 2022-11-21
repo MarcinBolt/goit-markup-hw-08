@@ -1,5 +1,5 @@
 .section-top {
-  max-width: 480px;
+  max-width: 1600px;
   padding-top: 118px;
   padding-bottom: 118px;
   margin: 0px auto;
@@ -23,15 +23,8 @@
   }
 }
 
-@media screen and (min-width: 481px) and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section-top {
-    max-width: 768px;
-  }
-}
-
-@media screen and (min-width: 769px) {
-  .section-top {
-    max-width: 1600px;
     padding-top: 200px;
     padding-bottom: 200px;
 

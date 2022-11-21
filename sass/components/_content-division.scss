@@ -1,3 +1,14 @@
 .content-division {
-  padding-bottom: 0px;
+  padding-bottom: 60px;
+}
+
+@media screen and (min-width: 768px) {
+  .content-division {
+    padding-bottom: 45px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .content-division {
+    padding-bottom: 0px;
+  }
 }

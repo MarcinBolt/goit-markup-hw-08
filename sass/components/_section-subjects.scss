@@ -1,4 +1,5 @@
 .section-subjects {
+  display: none;
   background-color: inherit;
 
   &__header {
@@ -11,8 +12,8 @@
   }
 }
 
-@media screen and (max-width: 768px) {
+@media screen and (min-width: 1200px) {
   .section-subjects {
-    display: none;
+    display: block;
   }
 }

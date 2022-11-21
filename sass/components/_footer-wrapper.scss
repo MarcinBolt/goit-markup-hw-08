@@ -1,17 +1,11 @@
 .footer-wrapper {
   display: flex;
   flex-wrap: wrap;
-  // justify-content: center;
   gap: 60px;
   justify-content: space-around;
 }
 
-// @media screen (min-width: 481px) and (max-width: 768px) {
-//   .footer-wrapper {
-//   }
-// }
-
-@media screen and (min-width: 769px) {
+@media screen and (min-width: 1200px) {
   .footer-wrapper {
     display: inline-flex;
     flex-wrap: wrap;
