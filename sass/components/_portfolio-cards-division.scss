@@ -15,6 +15,7 @@
   &__list-element {
     max-width: 450px;
     max-height: 404px;
+    border: 1px solid $background-filtered-description;
 
     &:hover,
     &:focus-within,
@@ -54,7 +55,7 @@
     }
     &__list-element {
       max-width: 370px;
-      max-height: 440px;
+      max-height: 404px;
     }
   }
 }
